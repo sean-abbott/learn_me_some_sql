@@ -1,0 +1,21 @@
+create table if not exists flights (
+    id BIGINT PRIMARY KEY,
+    carrier    text,
+    origin    text,
+    destination    text,
+    flight_num    text,
+    flight_time    int,
+    tail_num    text,
+    dep_time    text,
+    arr_time    text,
+    dep_delay    int,
+    arr_delay    int,
+    taxi_out    int,
+    taxi_in    int,
+    distance    int,
+    cancelled    text,
+    diverted    text,
+    dep_day_of_week    varchar (255),
+    dep_month    varchar (255),
+    dep_date    text
+);
